@@ -107,3 +107,8 @@ class BusinessHours:
             if datetime.isoweekday() == weekend:
                 return True
         return False
+
+    def __str__(self):       
+        return str(self.getminutes()) + " mintes, ie " + str( self.gethours())+ " hours, ie " +  str(self.getdays())+ " days"
+        
+        
